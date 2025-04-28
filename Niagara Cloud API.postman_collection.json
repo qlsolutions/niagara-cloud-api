@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "261c5a70-45ae-4d61-8b4b-12f41106ce61",
+		"_postman_id": "b2dc7fd5-0eb3-4a54-bd66-acb855abebe4",
 		"name": "Niagara Cloud API",
 		"description": "Niagara NDS API Guide:\n\n[https://docs.niagara-community.com/bundle/docNdsApi/page/AboutThisGuideEmsApi-A32C821A.html](https://docs.niagara-community.com/bundle/docNdsApi/page/AboutThisGuideEmsApi-A32C821A.html)\n\nFull Documentation (PDF):\n\n[https://exceed-primary-production-main.s3.amazonaws.com/uploads/resource_pdfs/targets/5630929/original/docndsapi.pdf?response-cache-control=private,%20max-age=0&amp;response-content-disposition=inline;%20filename=docndsapi.pdf&amp;response-content-type=application/pdf&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAVN5TH7LDD5UX254Y/20250428/us-east-1/s3/aws4_request&amp;X-Amz-Date=20250428T075729Z&amp;X-Amz-Expires=3600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e1fccdea395fac5ef6655f939841c48288197bf2b955adcc1df936fb54ca8c2f](https://exceed-primary-production-main.s3.amazonaws.com/uploads/resource_pdfs/targets/5630929/original/docndsapi.pdf?response-cache-control=private%2C%20max-age%3D0&response-content-disposition=inline%3B%20filename%3Ddocndsapi.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVN5TH7LDD5UX254Y%2F20250428%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250428T075729Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e1fccdea395fac5ef6655f939841c48288197bf2b955adcc1df936fb54ca8c2f)\n\nNiagara Cloud Suite Courses:\n\n[https://www.tridiumuniversity.com/student/catalog/list?category_ids=39020-ncs-courses](https://www.tridiumuniversity.com/student/catalog/list?category_ids=39020-ncs-courses)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
@@ -3462,7 +3462,7 @@
 						"exec": [
 							"var data = JSON.parse(responseBody);\r",
 							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.collectionVariables.set(\"access_token\", data.access_token);\r",
+							"    pm.collectionVariables.set(\"accessToken\", data.access_token);\r",
 							"});"
 						],
 						"type": "text/javascript",
@@ -3557,7 +3557,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{access_token}}",
+							"value": "{{accessToken}}",
 							"type": "string"
 						}
 					]
